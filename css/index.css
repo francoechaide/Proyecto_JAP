@@ -1,12 +1,4 @@
-:root{
-    --coloroscuro:#22222B;
-    --colorgris:#434351;
-    --colorrosa:#AC6291;
-    --colorrosaclaro:#E6CADF;
-    --colorblanco:#ECE7EB;
-    font-family: Tahoma;
-    font-size: 20px;
-}
+
 @media (prefers-reduced-motion: no-preference) {
     * {
       scroll-behavior: smooth;
@@ -18,32 +10,18 @@ html{
 body{
     margin: 0 0;
     background-color: var(--colorgris);
-    color:var(--colorrosaclaro);
+    color: var(--colorsecundario);
     overflow-x:hidden;
 }
-/* ============================================== HEADER ============================================ */
-nav{
-    width:100vw;
-    height:6vh;
-    background-color: var(--coloroscuro);
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position:fixed;
-    z-index:2;
-}
-nav a, #muchmore a{
-    text-decoration: none;
-    color:var(--colorrosa);
-    font-size: 1.5rem;
-}
+
 /* ======================================== PRESENTACION E-COMMERCE ======================================  */
 #presentation{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left:8vw;
-    margin-right:8vw;
+
+    width: 100%;
+    background-color: var(--lightalphacolor);
 }
 #text-presentation{
     display:flex;
@@ -77,7 +55,7 @@ nav a, #muchmore a{
     width:200px;
     height:60px;
     background-color: var(--coloroscuro);
-    color:var(--colorrosa);
+    color:var(--colorprincipal);
     font-size:1.5rem;
     border:none;
     border-radius: 10px;
@@ -85,12 +63,12 @@ nav a, #muchmore a{
 }
 #btn-presentation:hover{
     transition:0.8s;
-    background-color:var(--colorrosa);
+    background-color:var(--colorprincipal);
     color:var(--coloroscuro);
-    border:var(--colorrosaclaro);
+    border:var(--colorsecundario);
 }
 /* ======================================== DISPLAY MAIN INDEX ======================================  */
-main{
+#main-display{
     display:none;
 }
 #category-container{
@@ -128,38 +106,12 @@ main{
 .category-image{
     width:30vw;
     height:auto;
-    border: 0.8px solid var(--colorrosaclaro);
+    border: 0.8px solid var(--colorsecundario);
     border-radius:10px;
-    box-shadow: 3px 3px var(--colorrosaclaro);
+    box-shadow: 3px 3px var(--colorsecundario);
     margin-top:1vh;
 }
-/* ============================================== F00TER  =============================================  */
-footer{
-    width:100vw;
-    height:10vh;
-    background-color: var(--coloroscuro);
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 1.2rem;
-}
-footer a{
-    text-decoration: none;
-    color:var(--colorrosa);
-}
-/* ============================================ DISEÑOS DIVS ==========================================  */
-.little-div{
-    width:100%;
-    height:10vh;
-}
-.medium-div{
-    width:100%;
-    height:25vh;
-}
-.big-div{
-    width:100%;
-    height:40vh;
-}
+
 /*  ============================================ CARRUSEL ==========================================  */ 
 .img-carrusel{
     border-radius: 15px;
@@ -172,6 +124,5 @@ footer a{
     margin-right: auto;
 }
 .carousel-caption{
-   
     text-shadow: -5px 3px 4px rgba(0,0,0,1);
 }
